@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" stylesheets="@../../../style/style.css" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.btl.quanlythuvien.DangNhapController">
+   <children>
+      <ImageView fitHeight="481.0" fitWidth="612.0" layoutX="-6.0" layoutY="-29.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../style/image/library-background-pile-books-open-vector-30497495.jpg" />
+         </image></ImageView>
+      <VBox alignment="TOP_CENTER" layoutX="40.0" layoutY="108.0" prefHeight="270.0" prefWidth="518.0" styleClass="login">
+         <children>
+            <Text fill="#796262" stroke="#615ba8" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="Subject" text="Login here" />
+            <HBox prefHeight="45.0" prefWidth="250.0" styleClass="login">
+               <children>
+                  <ImageView fitHeight="30.0" fitWidth="34.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../style/image/User_icon_2.svg.png" />
+                     </image>
+                     <HBox.margin>
+                        <Insets right="8.0" />
+                     </HBox.margin>
+                  </ImageView>
+                  <TextField fx:id="admin" onAction="#loginHandler" prefHeight="30.0" prefWidth="435.0" promptText="User name" styleClass="login" />
+               </children>
+            </HBox>
+            <HBox layoutX="30.0" layoutY="186.0" prefHeight="30.0" prefWidth="235.0" styleClass="login">
+               <children>
+                  <ImageView fitHeight="30.0" fitWidth="34.0" pickOnBounds="true" preserveRatio="true" styleClass="login">
+                     <image>
+                        <Image url="@../../../style/image/1024px-Password.svg.png" />
+                     </image>
+                     <HBox.margin>
+                        <Insets right="7.0" />
+                     </HBox.margin>
+                  </ImageView>
+                  <PasswordField fx:id="password" onAction="#loginHandler" prefHeight="30.0" prefWidth="435.0" promptText="Passwword" />
+               </children>
+            </HBox>
+            <Button fx:id="btnDangNhap" alignment="CENTER" contentDisplay="RIGHT" mnemonicParsing="false" onAction="#loginHandler" onMouseDragOver="#kiemTraTK" prefHeight="30.0" prefWidth="283.0" styleClass="login" text="Sign in" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font></Button>
+         </children>
+      </VBox>
+      <HBox alignment="CENTER" prefHeight="114.0" prefWidth="600.0" styleClass="Name" stylesheets="@../../../style/style.css">
+         <children>
+            <ImageView fitHeight="106.0" fitWidth="133.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../style/image/uc-38.png" />
+               </image>
+            </ImageView>
+            <Text fill="#1f5084" stroke="#a9c3df" strokeType="OUTSIDE" strokeWidth="3.0" text="OU Library">
+               <font>
+                  <Font size="48.0" />
+               </font>
+            </Text>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>

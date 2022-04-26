@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="550.0" prefWidth="691.0" stylesheets="@../../../style/style.css" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.btl.quanlythuvien.SachController">
+   <children>
+      <HBox alignment="CENTER_LEFT" prefHeight="83.0" prefWidth="678.0">
+         <children>
+            <ImageView fitHeight="58.0" fitWidth="68.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../style/image/uc-38.png" />
+               </image>
+            </ImageView>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="OU Library" wrappingWidth="156.22228240966797">
+               <font>
+                  <Font name=".VnBodoniH" size="19.0" />
+               </font>
+            </Text>
+            <HBox alignment="CENTER_RIGHT" prefHeight="57.0" prefWidth="467.0" stylesheets="@../../../style/style.css">
+               <children>
+                  <ImageView fitHeight="51.0" fitWidth="39.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../Style/image/icon-admin.png" />
+                     </image>
+                  </ImageView>
+                  <Label alignment="CENTER" text="Admin">
+                     <font>
+                        <Font name="Tw Cen MT" size="18.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets right="5.0" />
+                     </HBox.margin>
+                  </Label>
+                  <Button fx:id="thoat" mnemonicParsing="false" onAction="#userLogout" styleClass="exit" text="Thoát">
+                     <HBox.margin>
+                        <Insets right="5.0" />
+                     </HBox.margin>
+                  </Button>
+               </children>
+            </HBox>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER_LEFT" layoutX="14.0" layoutY="75.0" prefHeight="55.0" prefWidth="663.0" styleClass="tool">
+         <children>
+            <Text fill="#f0e4ce" strokeType="OUTSIDE" strokeWidth="0.0" text="Quản lý sách">
+               <font>
+                  <Font name="Arial Bold" size="15.0" />
+               </font>
+            </Text>
+         </children>
+         <effect>
+            <Glow />
+         </effect>
+      </HBox>
+      <TableView fx:id="twSach" layoutX="152.0" layoutY="150.0" prefHeight="338.0" prefWidth="526.0" />
+      <Button fx:id="btTrangChuBack" layoutX="571.0" layoutY="505.0" mnemonicParsing="false" onAction="#qlHandler" prefHeight="30.0" prefWidth="90.0" styleClass="Back" text="Trở lại" textFill="#efebeb" />
+      <Button fx:id="btThemS" layoutX="25.0" layoutY="197.0" mnemonicParsing="false" onAction="#addHandler" prefHeight="55.0" prefWidth="102.0" styleClass="scdg" text="Thêm" textFill="#050505">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="btSuaS" layoutX="25.0" layoutY="275.0" mnemonicParsing="false" onAction="#UpdateHandler" prefHeight="55.0" prefWidth="102.0" styleClass="scdg" text="Sửa" textFill="#100f0f">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+      <Button layoutX="25.0" layoutY="354.0" mnemonicParsing="false" onAction="#delHandler" prefHeight="55.0" prefWidth="102.0" styleClass="scdg" text="Xoá" textFill="#050505">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="btTimKiemS" layoutX="25.0" layoutY="432.0" mnemonicParsing="false" onAction="#SearchHandler" prefHeight="55.0" prefWidth="102.0" styleClass="scdg" text="Tìm kiếm" textFill="#131212">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

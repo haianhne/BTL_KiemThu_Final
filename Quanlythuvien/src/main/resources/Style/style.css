@@ -1,0 +1,151 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/Other/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : Apr 20, 2022, 7:38:50 AM
+    Author     : ACER
+*/
+VBox.login {
+    -fx-border-color: lightcyan;
+    -fx-border-width:5;
+    -fx-padding: 10;
+    -fx-spacing: 5;
+    -fx-border-radius: 10 10 10 10;
+}
+Text.Subject {
+    -fx-font-size: 30;
+    -fx-stroke-width: 4;
+    -fx-fill: #43473a;
+    -fx-stroke: white;
+}
+HBox.login {
+    -fx-pref-width: 200;
+    -fx-padding: 8;
+    -fx-spacing: 5;
+
+}
+Hbox.Name {
+    -fx-background-color:#1E252B;
+}
+
+FlowPane
+{
+    -fx-background-color: #cff9ff;
+}
+HBox.tool{
+     -fx-background-color: #652BD9;
+     -fx-padding: 8;
+     -fx-spacing: 5;
+}
+
+VBox.ql{
+    -fx-padding: 10;
+    -fx-spacing: 10;
+}
+
+.button.login {
+    -fx-background-color: #4873AB;
+  -fx-border: none;
+  -fx-color: white;
+  -fx-padding: 12px;
+  -fx-text-align: center;
+  -fx-text-decoration: none;
+  -fx-display: inline-block;
+  -fx-font-size: 14px;
+  -fx-margin: 2px 2px;
+}
+
+.button.exit {
+    -fx-background-color: #cff9ff;
+    -fx-border-radius:18px;
+    -fx-border-color: #d9d9d9;
+    -fx-border-width: 1px;
+    -fx-border-style: solid;
+}
+
+
+
+.button.dg {
+    -fx-text-decoration: none;
+    -fx-display: inline-block;
+    -fx-font-size: 16px;
+    -fx-margin: 4px 2px;
+    -webkit-transition-duration: 0.4s;
+    -fx-transition-duration: 0.4s;
+    -fx-background-color: white; 
+    -fx-color: #0F0F0F; 
+    -fx-border-color: crimson;
+    -fx-border-width: 2px;
+    -fx-border-style: solid;
+}
+
+.button.dg:hover {
+    -fx-background-color: crimson ;
+}
+
+.button.book {
+    -fx-text-decoration: none;
+    -fx-display: inline-block;
+    -fx-font-size: 16px;
+    -fx-margin: 4px 2px;
+    -webkit-transition-duration: 0.4s;
+    -fx-transition-duration: 0.4s;
+    -fx-background-color: white; 
+    -fx-color: #0F0F0F; 
+    -fx-border-color: greenyellow;
+    -fx-border-width: 2px;
+    -fx-border-style: solid;
+}
+
+.button.book:hover {
+    -fx-background-color: greenyellow ;
+}
+
+.button.brb {
+    -fx-text-decoration: none;
+    -fx-display: inline-block;
+    -fx-font-size: 16px;
+    -fx-margin: 4px 2px;
+    -webkit-transition-duration: 0.4s;
+    -fx-transition-duration: 0.4s;
+    -fx-background-color: white; 
+    -fx-color: #0F0F0F; 
+    -fx-border-color: #30D9D6;
+    -fx-border-width: 2px;
+    -fx-border-style: solid;
+}
+
+.button.brb:hover {
+    -fx-background-color: #30D9D6 ;
+}
+
+.button.scdg {
+    -fx-text-decoration: none;
+    -fx-display: inline-block;
+    -fx-font-size: 16px;
+    -fx-margin: 4px 2px;
+    -webkit-transition-duration: 0.4s;
+    -fx-transition-duration: 0.4s;
+    -fx-background-color: white; 
+    -fx-color: #0F0F0F; 
+    -fx-border-color: #30D9D6;
+    -fx-border-width: 2px;
+    -fx-border-style: solid;
+}
+
+.button.scdg:hover {
+    -fx-background-color: #30D9D6 ;
+}
+
+.button.Back {
+    -fx-background-color: #652BD9;
+}
+
+AnchorPane{
+    -fx-background-color: #cff9ff;
+}
+
+VBox.addDG{
+    -fx-border: none;
+}

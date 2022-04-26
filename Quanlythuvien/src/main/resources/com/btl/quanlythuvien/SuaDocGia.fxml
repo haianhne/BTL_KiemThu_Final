@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="551.0" prefWidth="916.0" stylesheets="@../../../style/style.css" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.btl.quanlythuvien.SuaDocGiaController">
+   <children>
+      <HBox alignment="CENTER_LEFT" prefHeight="58.0" prefWidth="916.0" styleClass="tool">
+         <children>
+            <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Sửa thông tin độc giả" wrappingWidth="251.9824981689453">
+               <font>
+                  <Font name="Arial Bold" size="24.0" />
+               </font>
+            </Text>
+         </children>
+         <padding>
+            <Insets left="10.0" />
+         </padding>
+         <effect>
+            <Glow />
+         </effect>
+      </HBox>
+      <VBox layoutX="17.0" layoutY="70.0" prefHeight="419.0" prefWidth="462.0" styleClass="addDG">
+         <children>
+            <HBox alignment="CENTER_LEFT" prefHeight="45.0" prefWidth="530.0">
+               <children>
+                  <Label prefHeight="20.0" prefWidth="140.0" text="Mã độc giả:" textFill="#1e252b">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="35.0" />
+                     </HBox.margin>
+                  </Label>
+                  <Label fx:id="maDG" prefHeight="20.0" prefWidth="118.0" textFill="#1e252b">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Label>
+               </children>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" prefHeight="45.0" prefWidth="530.0">
+               <children>
+                  <Label prefHeight="19.0" prefWidth="130.0" text="Họ độc giả:" textFill="#1e252b">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="35.0" />
+                     </HBox.margin>
+                  </Label>
+                  <TextField fx:id="txtHo" prefHeight="30.0" prefWidth="269.0" promptText="Nhập họ" />
+               </children>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="10.0" prefHeight="45.0" prefWidth="530.0">
+               <children>
+                  <Label prefHeight="15.0" prefWidth="130.0" text="Tên độc giả:" textFill="#1e252b">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="35.0" />
+                     </HBox.margin>
+                  </Label>
+                  <TextField fx:id="txtTen" prefHeight="30.0" prefWidth="269.0" promptText="Nhập tên" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="10.0" prefHeight="45.0" prefWidth="530.0">
+               <children>
+                  <Label prefHeight="13.0" prefWidth="130.0" text="Giới tính:" textFill="#1e252b">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="35.0" />
+                     </HBox.margin>
+                  </Label>
+                  <TextField fx:id="txtGT" prefHeight="30.0" prefWidth="269.0" promptText="Vd: Nữ" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="10.0" prefHeight="45.0" prefWidth="530.0">
+               <children>
+                  <Label prefHeight="13.0" prefWidth="130.0" text="Ngày sinh:" textFill="#1e252b">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="35.0" />
+                     </HBox.margin>
+                  </Label>
+                  <DatePicker fx:id="dpNS" prefHeight="30.0" prefWidth="269.0" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="192.0" prefHeight="45.0" prefWidth="530.0">
+               <children>
+                  <Label prefHeight="14.0" prefWidth="130.0" text="Đối tượng:" textFill="#1e252b">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="35.0" />
+                     </HBox.margin>
+                  </Label>
+                  <ComboBox fx:id="cbDT" prefHeight="30.0" prefWidth="269.0" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" prefHeight="45.0" prefWidth="530.0">
+               <children>
+                  <Label prefHeight="14.0" prefWidth="130.0" text="Bộ phận:" textFill="#1e252b">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="35.0" />
+                     </HBox.margin>
+                  </Label>
+                  <ComboBox fx:id="cbBP" prefHeight="30.0" prefWidth="269.0" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="192.0" prefHeight="45.0" prefWidth="530.0">
+               <children>
+                  <Label prefHeight="21.0" prefWidth="130.0" text="Hạn thẻ bắt đầu:" textFill="#1e252b">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="35.0" />
+                     </HBox.margin>
+                  </Label>
+                  <DatePicker fx:id="dpBD" prefHeight="30.0" prefWidth="269.0" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="147.0" prefHeight="46.0" prefWidth="466.0">
+               <children>
+                  <Label prefHeight="20.0" prefWidth="130.0" text="Hạn thẻ kết thúc:" textFill="#1e252b">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="35.0" />
+                     </HBox.margin>
+                  </Label>
+                  <DatePicker fx:id="dpKT" prefHeight="30.0" prefWidth="269.0" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="101.0" prefHeight="45.0" prefWidth="530.0">
+               <children>
+                  <Label prefHeight="17.0" prefWidth="130.0" text="Email:" textFill="#1e252b">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="35.0" />
+                     </HBox.margin>
+                  </Label>
+                  <TextField fx:id="txtEmail" prefHeight="30.0" prefWidth="269.0" promptText="Nhập địa chỉ email" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="56.0" prefHeight="45.0" prefWidth="530.0">
+               <children>
+                  <Label prefHeight="9.0" prefWidth="130.0" text="Địa chỉ:" textFill="#1e252b">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="35.0" />
+                     </HBox.margin>
+                  </Label>
+                  <TextField fx:id="txtDC" prefHeight="30.0" prefWidth="269.0" promptText="Nhập địa chỉ" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="147.0" prefHeight="45.0" prefWidth="530.0">
+               <children>
+                  <Label prefHeight="18.0" prefWidth="130.0" text="Sđt:" textFill="#1e252b">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="35.0" />
+                     </HBox.margin>
+                  </Label>
+                  <TextField fx:id="txtSdt" prefHeight="30.0" prefWidth="269.0" promptText="Nhập số điện thoại" />
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+      <Button layoutX="115.0" layoutY="502.0" mnemonicParsing="false" onAction="#updateHanler" prefHeight="30.0" prefWidth="90.0" styleClass="Back" text="Cập nhật" textFill="WHITE" />
+      <Button layoutX="248.0" layoutY="502.0" mnemonicParsing="false" onAction="#resetDGHandler" prefHeight="30.0" prefWidth="90.0" styleClass="Back" text="Nhập lại" textFill="WHITE" />
+      <Button fx:id="btDGBack" layoutX="772.0" layoutY="502.0" mnemonicParsing="false" onAction="#exHandler" prefHeight="30.0" prefWidth="90.0" styleClass="Back" text="Quay lại" textFill="WHITE" />
+      <TableView fx:id="twDocGia" layoutX="491.0" layoutY="70.0" prefHeight="419.0" prefWidth="410.0" />
+   </children>
+   <opaqueInsets>
+      <Insets />
+   </opaqueInsets>
+</AnchorPane>
